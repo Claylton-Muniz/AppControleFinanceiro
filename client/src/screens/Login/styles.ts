@@ -2,10 +2,6 @@ import {StyleSheet} from 'react-native';
 import {logoSizes} from '../themes';
 
 export const styles = StyleSheet.create({
-  body: {
-    backgroundColor: '#202020',
-    flex: 1,
-  },
   welcome: {
     alignItems: 'center',
     paddingTop: 35,

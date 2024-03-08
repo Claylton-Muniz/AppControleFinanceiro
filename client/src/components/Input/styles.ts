@@ -15,6 +15,10 @@ export const styles = StyleSheet.create({
     color: '#fff',
     marginHorizontal: 10,
   },
+  borderActive: {
+    borderColor: '#8044e4',
+    borderWidth: 2,
+  },
   errorMessage: {
     color: '#ff0010',
   },

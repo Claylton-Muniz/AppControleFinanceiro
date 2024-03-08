@@ -22,15 +22,19 @@ export const Input = ({
     senha: 'password',
   });
 
+  const [isFocus, setIsFocus] = useState(false);
+
   return (
     <>
       <Text style={styles.infoText}>{name}</Text>
-      <View style={styles.inputArea}>
+      <View style={[styles.inputArea, isFocus ? styles.borderActive : null]}>
         <TextInput
           style={styles.inputLabel}
           placeholder={name}
           placeholderTextColor="#999"
           value={value}
+          onFocus={() => setIsFocus(true)}
+          onBlur={() => setIsFocus(false)}
           onChangeText={t => setValue(fieldNames[name.toLowerCase()], t)}
           secureTextEntry={secureTextEntry}
         />

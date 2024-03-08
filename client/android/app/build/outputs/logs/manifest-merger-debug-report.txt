@@ -6,6 +6,7 @@ INJECTED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/an
 INJECTED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/android/app/src/debug/AndroidManifest.xml:2:1-9:12
 INJECTED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/android/app/src/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:flipper-integration:0.73.5] /home/claylton/.gradle/caches/transforms-3/49a526363f5122c34ee0da4de241ced3/transformed/jetified-flipper-integration-0.73.5-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-async-storage_async-storage] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-safe-area-context] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-screens] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:2:1-24:12
@@ -176,6 +177,8 @@ INJECTED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/an
 INJECTED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/android/app/src/debug/AndroidManifest.xml
 MERGED from [com.facebook.react:flipper-integration:0.73.5] /home/claylton/.gradle/caches/transforms-3/49a526363f5122c34ee0da4de241ced3/transformed/jetified-flipper-integration-0.73.5-debug/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:flipper-integration:0.73.5] /home/claylton/.gradle/caches/transforms-3/49a526363f5122c34ee0da4de241ced3/transformed/jetified-flipper-integration-0.73.5-debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-async-storage_async-storage] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-async-storage_async-storage] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-safe-area-context] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-safe-area-context] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-screens] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44

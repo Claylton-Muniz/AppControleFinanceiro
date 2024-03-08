@@ -2,19 +2,52 @@ import React, {useEffect, useState} from 'react';
 import {Image, Text, TouchableOpacity, View} from 'react-native';
 import {styles} from './styles';
 
+
+import axios from 'axios';
+
 import Logo from 'assets/logo.jpeg';
 import {Input} from 'components/Input/';
 
+// Mude o ip para o da sua máquina:
+axios.defaults.baseURL = 'http://192.168.0.25:1337/api';
+
 const Login = () => {
   const [account, setAccount] = useState({email: '', password: ''});
-  const [errors] = useState({email: '', password: ''});
-
-  useEffect(() => {
-    console.log(account);
-  }, [account]);
-
+  const [error, setError] = useState('');
+  const [jwt, setJwt] = useState('');
+  
+  // useEffect(() => {
+  //   console.log(account);
+  // }, [account]);
+  
   const handleInputChange = (key: any, value: any) => {
     setAccount(prevState => ({...prevState, [key]: value}));
+  };
+
+  const handleLogin = async () => {
+
+    // Testa se o user está correto
+    try {
+      const res = await axios.post('/auth/local', {
+        identifier: account.email, 
+        password: account.password
+      });
+
+      if (res.data.jwt) {
+        setError('');
+        setJwt(res.data.jwt);
+        // console.log('sucesso no login', jwt);
+      }
+
+    } catch (error: any) {
+      if (error.response && error.response.status === 400) {
+        setError('Credenciais invalidas!');
+      } else {
+        console.log(error);
+      }
+    }
+    
+    setAccount({email: '', password: ''});
   };
 
   return (
@@ -28,18 +61,17 @@ const Login = () => {
           name="Email"
           value={account.email}
           setValue={handleInputChange}
-          errorMessage={errors.email}
         />
         <Input
           name="Senha"
           value={account.password}
           setValue={handleInputChange}
-          errorMessage={errors.password}
           secureTextEntry
         />
       </View>
       <View style={styles.confirm}>
-        <TouchableOpacity style={styles.button}>
+        <Text style={styles.errorMessage}>{error}</Text>
+        <TouchableOpacity style={styles.button} onPress={handleLogin}>
           <Text style={styles.text}>Login</Text>
         </TouchableOpacity>
       </View>

@@ -35,7 +35,7 @@ export const Input = ({
           secureTextEntry={secureTextEntry}
         />
       </View>
-      <Text style={styles.errorMensage}>{errorMessage}</Text>
+      <Text style={styles.errorMessage}>{errorMessage}</Text>
     </>
   );
 };

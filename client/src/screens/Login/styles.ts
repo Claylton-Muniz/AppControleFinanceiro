@@ -30,6 +30,11 @@ export const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     paddingBottom: 15,
   },
+  errorMessage: {
+    color: '#ff0010',
+    textAlign: 'center',
+    paddingBottom: 10,
+  },
   button: {
     backgroundColor: '#8044e4',
     borderRadius: 20,

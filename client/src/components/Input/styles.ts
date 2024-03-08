@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
     color: '#fff',
     marginHorizontal: 10,
   },
-  errorMensage: {
+  errorMessage: {
     color: '#ff0010',
   },
 });

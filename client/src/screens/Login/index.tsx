@@ -1,7 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {Image, Text, TouchableOpacity, View} from 'react-native';
 import {styles} from './styles';
-
 
 import axios from 'axios';
 
@@ -15,38 +14,36 @@ const Login = () => {
   const [account, setAccount] = useState({email: '', password: ''});
   const [error, setError] = useState('');
   const [jwt, setJwt] = useState('');
-  
+
   // useEffect(() => {
   //   console.log(account);
   // }, [account]);
-  
+
   const handleInputChange = (key: any, value: any) => {
     setAccount(prevState => ({...prevState, [key]: value}));
   };
 
   const handleLogin = async () => {
-
     // Testa se o user está correto
     try {
       const res = await axios.post('/auth/local', {
-        identifier: account.email, 
-        password: account.password
+        identifier: account.email,
+        password: account.password,
       });
 
       if (res.data.jwt) {
         setError('');
         setJwt(res.data.jwt);
-        // console.log('sucesso no login', jwt);
+        console.log('sucesso no login', jwt);
       }
-
-    } catch (error: any) {
-      if (error.response && error.response.status === 400) {
-        setError('Credenciais invalidas!');
+    } catch (err: any) {
+      if (err.response && err.response.status === 400) {
+        setError('email ou senha errado');
       } else {
-        console.log(error);
+        console.log(err);
       }
     }
-    
+
     setAccount({email: '', password: ''});
   };
 

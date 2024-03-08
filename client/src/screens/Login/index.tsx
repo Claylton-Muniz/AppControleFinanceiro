@@ -1,8 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {Image, Text, TouchableOpacity, View} from 'react-native';
 
 import {styles} from './styles';
 import {global} from '../global';
+
+import {NavigationProp} from '@react-navigation/native';
 
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -13,20 +15,17 @@ import {Input} from 'components/Input/';
 // Mude o ip para o da sua máquina:
 axios.defaults.baseURL = 'http://10.0.209.18:1337/api';
 
-const Login = () => {
+type RootStackParamList = {
+  Home: undefined;
+};
+
+type Props = {
+  navigation: NavigationProp<RootStackParamList, 'Home'>;
+};
+
+const Login = ({navigation}: Props) => {
   const [account, setAccount] = useState({email: '', password: ''});
   const [error, setError] = useState('');
-
-  useEffect(() => {
-    const checkLoginStatus = async () => {
-      const token = await AsyncStorage.getItem('@jwt_token');
-      if (token) {
-        console.log('usuário já está logado, token:', token);
-      }
-    };
-
-    checkLoginStatus();
-  }, []);
 
   const handleInputChange = (key: any, value: any) => {
     setAccount(prevState => ({...prevState, [key]: value}));
@@ -45,6 +44,7 @@ const Login = () => {
         // Armazena o token no dispositivo
         AsyncStorage.setItem('@jwt_token', res.data.jwt);
         console.log('sucesso no login, token:', res.data.jwt);
+        navigation.navigate('Home');
       }
     } catch (err: any) {
       if (err.response && err.response.status === 400) {

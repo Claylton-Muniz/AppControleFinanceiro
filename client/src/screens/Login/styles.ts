@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   logo: {
     width: logoSizes.login,
     height: logoSizes.login,
-    borderRadius: 10,
+    borderRadius: 20,
     marginTop: 50,
   },
   h1: {

@@ -13,7 +13,7 @@ import Logo from 'assets/logo.jpeg';
 import {Input} from 'components/Input/';
 
 // Mude o ip para o da sua máquina:
-axios.defaults.baseURL = 'http://10.0.209.18:1337/api';
+axios.defaults.baseURL = 'http://10.0.215.51:1337/api';
 
 type RootStackParamList = {
   Home: undefined;

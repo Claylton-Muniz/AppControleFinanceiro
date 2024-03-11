@@ -1,35 +1,18 @@
 {
   "name": "server",
-  "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@strapi/strapi": "4.20.4",
-    "@strapi/plugin-users-permissions": "4.20.4",
-    "@strapi/plugin-i18n": "4.20.4",
-    "@strapi/plugin-cloud": "4.20.4",
-    "better-sqlite3": "8.6.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "5.3.4",
-    "styled-components": "5.3.3"
-  },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "0dd12216-016a-4db1-b634-cc25c3d3df53"
-  },
-  "engines": {
-    "node": ">=18.0.0 <=20.x.x",
-    "npm": ">=6.0.0"
-  },
-  "license": "MIT"
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.0"
+  }
 }

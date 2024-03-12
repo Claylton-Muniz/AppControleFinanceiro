@@ -13,7 +13,7 @@ import Logo from 'assets/logo.jpeg';
 import {Input} from 'components/Input/';
 
 // Mude o ip para o da sua máquina:
-axios.defaults.baseURL = 'http://10.0.215.51:1337/api';
+axios.defaults.baseURL = 'http://192.168.0.25:1337';
 
 type RootStackParamList = {
   Home: undefined;
@@ -33,21 +33,25 @@ const Login = ({navigation}: Props) => {
 
   const handleLogin = async () => {
     // Testa se o user está correto
+
     try {
       const res = await axios.post('/auth/local', {
-        identifier: account.email,
+        email: account.email,
         password: account.password,
       });
 
-      if (res.data.jwt) {
+      console.log(res.data.token);
+
+      if (res.data.token) {
+        console.log('gerou');
         setError('');
         // Armazena o token no dispositivo
-        AsyncStorage.setItem('@jwt_token', res.data.jwt);
-        console.log('sucesso no login, token:', res.data.jwt);
+        AsyncStorage.setItem('@jwt_token', res.data.token);
+        console.log(res.data.token);
         navigation.navigate('Home');
       }
     } catch (err: any) {
-      if (err.response && err.response.status === 400) {
+      if (err.response && err.response.status === 401) {
         setError('email ou senha errado');
       } else {
         console.log(err);

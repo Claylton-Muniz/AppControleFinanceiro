@@ -10,13 +10,7 @@ type Props = {
   errorMessage: string;
 };
 
-export const Input = ({
-  name,
-  value,
-  setValue,
-  secureTextEntry,
-  errorMessage,
-}: Props) => {
+export const Input = ({name, value, setValue, secureTextEntry}: Props) => {
   const [fieldNames] = useState<{[key: string]: string}>({
     email: 'email',
     senha: 'password',
@@ -31,7 +25,7 @@ export const Input = ({
         <TextInput
           style={styles.inputLabel}
           placeholder={name}
-          placeholderTextColor="#999"
+          placeholderTextColor="#575757"
           value={value}
           onFocus={() => setIsFocus(true)}
           onBlur={() => setIsFocus(false)}
@@ -39,7 +33,6 @@ export const Input = ({
           secureTextEntry={secureTextEntry}
         />
       </View>
-      <Text style={styles.errorMessage}>{errorMessage}</Text>
     </>
   );
 };

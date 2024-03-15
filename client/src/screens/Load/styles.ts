@@ -3,14 +3,14 @@ import {logoSizes} from '../themes';
 
 export const styles = StyleSheet.create({
   body: {
+    flex: 1,
+    backgroundColor: '#5A3787',
     alignItems: 'center',
     justifyContent: 'center',
   },
   logo: {
-    alignContent: 'center',
-    alignItems: 'center',
-    width: logoSizes.login,
-    height: logoSizes.login,
+    width: logoSizes.m,
+    height: logoSizes.m,
     borderRadius: 10,
     marginBottom: 120,
   },

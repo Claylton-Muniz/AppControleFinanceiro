@@ -2,44 +2,52 @@ import {StyleSheet} from 'react-native';
 import {logoSizes} from '../themes';
 
 export const styles = StyleSheet.create({
+  body: {
+    flex: 1,
+    backgroundColor: '#5A3787',
+  },
   welcome: {
-    alignItems: 'center',
-    paddingTop: 35,
+    flexDirection: 'row',
+    marginHorizontal: 10,
+    marginVertical: 45,
   },
   logo: {
-    width: logoSizes.login,
-    height: logoSizes.login,
-    borderRadius: 20,
-    marginTop: 50,
+    width: logoSizes.s,
+    height: logoSizes.s,
+    borderRadius: 100,
+    marginTop: 10,
   },
   h1: {
-    paddingVertical: 30,
-    fontSize: 45,
+    paddingVertical: 17,
+    fontSize: 38,
+    fontWeight: 'bold',
     color: '#fff',
+  },
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    borderTopLeftRadius: 34,
+    borderTopRightRadius: 34,
   },
   login: {
     paddingTop: 5,
-    paddingHorizontal: 15,
+    paddingHorizontal: 25,
   },
   confirm: {
     flex: 1,
-    justifyContent: 'flex-end',
+    // backgroundColor: 'red',
+    marginTop: 25,
     paddingBottom: 15,
   },
-  errorMessage: {
-    color: '#ff0010',
-    textAlign: 'center',
-    paddingBottom: 10,
-  },
   button: {
-    backgroundColor: '#8044e4',
+    backgroundColor: '#5A3787',
     borderRadius: 20,
-    marginHorizontal: 10,
+    marginHorizontal: 25,
   },
   text: {
     color: '#fff',
     fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: 24,
     textAlign: 'center',
     paddingVertical: 10,
   },

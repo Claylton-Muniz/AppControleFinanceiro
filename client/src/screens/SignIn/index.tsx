@@ -17,13 +17,14 @@ axios.defaults.baseURL = 'http://192.168.0.25:1337';
 
 type RootStackParamList = {
   Home: undefined;
+  SignUp: undefined;
 };
 
 type Props = {
   navigation: NavigationProp<RootStackParamList, 'Home'>;
 };
 
-const Login = ({navigation}: Props) => {
+const SignIn = ({navigation}: Props) => {
   const [account, setAccount] = useState({email: '', password: ''});
 
   const handleInputChange = (key: any, value: any) => {
@@ -66,10 +67,7 @@ const Login = ({navigation}: Props) => {
         <Image source={Logo} style={styles.logo} />
         <Text style={styles.h1}>Bem-vindo!</Text>
       </Animatable.View>
-      <Animatable.View
-        delay={600}
-        animation={'fadeInUp'}
-        style={styles.container}>
+      <Animatable.View animation={'fadeInUp'} style={styles.container}>
         <View style={styles.login}>
           <Input
             name="Email"
@@ -85,12 +83,21 @@ const Login = ({navigation}: Props) => {
         </View>
         <View style={styles.confirm}>
           <TouchableOpacity style={styles.button} onPress={handleLogin}>
-            <Text style={styles.text}>Acessar</Text>
+            <Text style={styles.textButton}>Acessar</Text>
           </TouchableOpacity>
+          <View style={styles.signUp}>
+            <Text style={styles.text}>Não possui conta?</Text>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate('SignUp');
+              }}>
+              <Text style={styles.textLink}>Cadastrar-se</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </Animatable.View>
     </View>
   );
 };
 
-export default Login;
+export default SignIn;

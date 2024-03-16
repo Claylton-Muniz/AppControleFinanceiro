@@ -20,8 +20,5 @@ export const styles = StyleSheet.create({
   borderActive: {
     borderColor: '#8044e4',
     borderWidth: 2,
-  },
-  errorMessage: {
-    color: '#ff0010',
-  },
+  }
 });

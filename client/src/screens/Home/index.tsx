@@ -9,17 +9,17 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {NavigationProp} from '@react-navigation/native';
 
 type RootStackParamList = {
-  Login: undefined;
+  SignIn: undefined;
 };
 
 type Props = {
-  navigation: NavigationProp<RootStackParamList, 'Login'>;
+  navigation: NavigationProp<RootStackParamList>;
 };
 
 const Home = ({navigation}: Props) => {
   const handleLogOut = async () => {
     AsyncStorage.removeItem('@jwt_token');
-    navigation.navigate('Login');
+    navigation.navigate('SignIn');
   };
 
   return (

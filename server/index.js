@@ -15,6 +15,18 @@ const db = mysql.createPool({
 app.use(cors())
 app.use(express.json())
 
+app.get('/api/users', (req, res) => {
+    let sql = "SELECT * FROM users"
+
+    db.query(sql, (err, result) => {
+        if (err) {
+            console.log("Erro na consulta:", err)
+        } else {
+            res.send(result)
+        }
+    })
+})
+
 app.post('/auth/local', (req, res) => {
     let sql = "SELECT * FROM users WHERE email = ? AND password = ?"
     const { email } = req.body
@@ -22,7 +34,7 @@ app.post('/auth/local', (req, res) => {
 
     db.query(sql, [email, password], (err, result) => {
         if (err) {
-            console.log("Erro na consulta:", err);
+            console.log("Erro na consulta:", err)
         } else {
             if (result.length) {
                 let token = jwt.sign({username: req.body.username}, 'segredo-do-token')

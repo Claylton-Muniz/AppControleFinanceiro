@@ -7,11 +7,11 @@ type Props = {
   value: string;
   setValue: (key: string, value: string) => void;
   secureTextEntry: boolean;
-  errorMessage: string;
 };
 
 export const Input = ({name, value, setValue, secureTextEntry}: Props) => {
   const [fieldNames] = useState<{[key: string]: string}>({
+    nome: 'name',
     email: 'email',
     senha: 'password',
   });

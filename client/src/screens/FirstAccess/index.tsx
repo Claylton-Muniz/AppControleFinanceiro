@@ -8,7 +8,8 @@ import {styles} from './styles';
 import Logo from 'assets/logo.jpeg';
 
 type RootStackParamList = {
-  Login: undefined;
+  SignIn: undefined;
+  SignUp: undefined;
 };
 
 type Props = {
@@ -29,13 +30,17 @@ const FirstAccess = ({navigation}: Props) => {
         delay={600}
         animation="fadeInUp"
         style={styles.choiceArea}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => {
+            navigation.navigate('SignUp');
+          }}>
           <Text style={styles.textButton}>Criar</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
-            navigation.navigate('Login');
+            navigation.navigate('SignIn');
           }}>
           <Text style={styles.textButton}>Acessar</Text>
         </TouchableOpacity>

@@ -21,7 +21,7 @@ type RootStackParamList = {
 };
 
 type Props = {
-  navigation: NavigationProp<RootStackParamList, 'Home'>;
+  navigation: NavigationProp<RootStackParamList>;
 };
 
 const SignIn = ({navigation}: Props) => {
@@ -63,11 +63,11 @@ const SignIn = ({navigation}: Props) => {
 
   return (
     <View style={styles.body}>
-      <Animatable.View animation={'fadeInLeft'} style={styles.welcome}>
+      <Animatable.View animation="fadeInLeft" style={styles.welcome}>
         <Image source={Logo} style={styles.logo} />
         <Text style={styles.h1}>Bem-vindo!</Text>
       </Animatable.View>
-      <Animatable.View animation={'fadeInUp'} style={styles.container}>
+      <Animatable.View animation="fadeInUp" style={styles.container}>
         <View style={styles.login}>
           <Input
             name="Email"

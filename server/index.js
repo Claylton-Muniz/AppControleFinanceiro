@@ -27,6 +27,27 @@ app.get('/api/users', (req, res) => {
     })
 })
 
+app.post('/api/users', (req, res) => {
+    let sql = "INSERT INTO users (username, email, password, dob) VALUES (?, ?, ?, ?)"
+    const { name } = req.body
+    const { email } = req.body
+    const { password } = req.body
+    const { dob } = req.body
+
+    const date = `${dob.year}-${dob.month}-${dob.day}`
+
+    console.log(name, email, password, date);
+
+    db.query(sql, [name, email, password, date], (err, result) => {
+        if (err) {
+            console.log("Erro na consulta:", err)
+        } else {
+            console.log("Dados enviados com sucesso!!!")
+            res.json({message: 'Dados enviados com sucesso!!!'});
+        }
+    })
+})
+
 app.post('/auth/local', (req, res) => {
     let sql = "SELECT * FROM users WHERE email = ? AND password = ?"
     const { email } = req.body

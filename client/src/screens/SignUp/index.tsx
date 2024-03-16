@@ -1,18 +1,33 @@
 import React, {useState} from 'react';
-import {Image, Text, View} from 'react-native';
+import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {NavigationProp} from '@react-navigation/native';
 
 import Logo from 'assets/logo.jpeg';
-
 import {styles} from './styles';
+import * as Animatable from 'react-native-animatable';
+
 import {Input} from 'components/Input';
 import {InputDate} from 'components/InputDate';
 
-const SignUp = () => {
+import axios from 'axios';
+
+// Mude o ip para o da sua máquina:
+axios.defaults.baseURL = 'http://192.168.0.25:1337';
+
+type RootStackParamList = {
+  SignIn: undefined;
+};
+
+type Props = {
+  navigation: NavigationProp<RootStackParamList>;
+};
+
+const SignUp = ({navigation}: Props) => {
   const [account, setAccount] = useState({
     name: '',
     email: '',
     password: '',
-    dob: {day: 0, moth: 0, year: 0},
+    dob: {day: '', month: '', year: ''},
   });
 
   const handleInputChange = (key: any, value: any) => {
@@ -31,13 +46,37 @@ const SignUp = () => {
     console.log(account);
   };
 
+  const handleSignUp = async () => {
+    try {
+      const res = await axios.post('/api/users', {
+        name: account.name,
+        dob: account.dob,
+        email: account.email,
+        password: account.password,
+      });
+
+      if (res.data.message) {
+        navigation.navigate('SignIn');
+      }
+    } catch (error) {
+      console.log(error);
+    }
+
+    setAccount({
+      name: '',
+      email: '',
+      password: '',
+      dob: {day: '', month: '', year: ''},
+    });
+  };
+
   return (
     <View style={styles.body}>
-      <View style={styles.welcome}>
+      <Animatable.View animation="fadeInLeft" style={styles.welcome}>
         <Image source={Logo} style={styles.logo} />
         <Text style={styles.h1}>Pronto para começar?</Text>
-      </View>
-      <View style={styles.container}>
+      </Animatable.View>
+      <Animatable.View animation="fadeInUp" style={styles.container}>
         <View style={styles.createAccount}>
           <Input
             name="Nome"
@@ -61,7 +100,21 @@ const SignUp = () => {
             secureTextEntry
           />
         </View>
-      </View>
+        <View style={styles.confirm}>
+          <TouchableOpacity style={styles.button} onPress={handleSignUp}>
+            <Text style={styles.textButton}>Criar conta</Text>
+          </TouchableOpacity>
+          <View style={styles.signUp}>
+            <Text style={styles.text}>Já possui conta?</Text>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate('SignIn');
+              }}>
+              <Text style={styles.textLink}>Acessar</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Animatable.View>
     </View>
   );
 };

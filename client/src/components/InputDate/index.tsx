@@ -4,14 +4,14 @@ import {styles} from './styles';
 
 type Props = {
   name: string;
-  value: string;
+  value: {day: string; month: string; year: string};
   setValue: (key: string, value: string) => void;
 };
 
 export const InputDate = ({name, value, setValue}: Props) => {
   const [isFocus, setIsFocus] = useState({
     day: false,
-    moth: false,
+    month: false,
     year: false,
   });
 
@@ -26,7 +26,7 @@ export const InputDate = ({name, value, setValue}: Props) => {
             style={styles.inputLabel}
             placeholder="Dia"
             keyboardType="numeric"
-            value={value}
+            value={value.day}
             onChangeText={t => setValue('day', t)}
             onFocus={() => setIsFocus(prevState => ({...prevState, day: true}))}
             onBlur={() => setIsFocus(prevState => ({...prevState, day: false}))}
@@ -34,18 +34,21 @@ export const InputDate = ({name, value, setValue}: Props) => {
           />
         </View>
         <View
-          style={[styles.inputMoth, isFocus.moth ? styles.borderActive : null]}>
+          style={[
+            styles.inputMoth,
+            isFocus.month ? styles.borderActive : null,
+          ]}>
           <TextInput
             style={styles.inputLabel}
             placeholder="Mês"
             keyboardType="numeric"
-            value={value}
-            onChangeText={t => setValue('moth', t)}
+            value={value.month}
+            onChangeText={t => setValue('month', t)}
             onFocus={() =>
-              setIsFocus(prevState => ({...prevState, moth: true}))
+              setIsFocus(prevState => ({...prevState, month: true}))
             }
             onBlur={() =>
-              setIsFocus(prevState => ({...prevState, moth: false}))
+              setIsFocus(prevState => ({...prevState, month: false}))
             }
             maxLength={2}
           />
@@ -56,7 +59,7 @@ export const InputDate = ({name, value, setValue}: Props) => {
             style={styles.inputLabel}
             placeholder="Ano"
             keyboardType="numeric"
-            value={value}
+            value={value.year}
             onChangeText={t => setValue('year', t)}
             onFocus={() =>
               setIsFocus(prevState => ({...prevState, year: true}))

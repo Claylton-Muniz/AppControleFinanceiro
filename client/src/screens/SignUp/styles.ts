@@ -33,4 +33,35 @@ export const styles = StyleSheet.create({
     paddingTop: 15,
     paddingHorizontal: 25,
   },
+  confirm: {
+    flex: 1,
+    // backgroundColor: 'red',
+    marginTop: 25,
+    paddingBottom: 15,
+  },
+  button: {
+    backgroundColor: '#5A3787',
+    borderRadius: 20,
+    marginHorizontal: 25,
+  },
+  textButton: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 24,
+    textAlign: 'center',
+    paddingVertical: 10,
+  },
+  signUp: {
+    flex: 1,
+    flexDirection: 'row',
+    alignSelf: 'center',
+    paddingTop: 5,
+  },
+  text: {
+    color: '#000',
+  },
+  textLink: {
+    color: '#2320C3',
+    paddingLeft: 5,
+  },
 });

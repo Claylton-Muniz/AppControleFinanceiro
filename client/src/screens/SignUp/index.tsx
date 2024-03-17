@@ -62,7 +62,7 @@ const SignUp = ({navigation}: Props) => {
     const regex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
     return regex.test(email);
   };
-  
+
   const validatePass = (pass: any) => {
     const regex = /^(?=.*[A-Z]).{8,}$/;
     return regex.test(pass);
@@ -77,7 +77,7 @@ const SignUp = ({navigation}: Props) => {
     });
 
     let errorMessage = '';
-      
+
     if (!validatePass(account.password)) {
       setError(prevState => ({...prevState, password: true}));
       if (account.password.length < 8) {
@@ -112,10 +112,10 @@ const SignUp = ({navigation}: Props) => {
         email: account.email,
         password: account.password,
       });
-  
+
       if (res.data.message) {
         navigation.navigate('SignIn');
-      } 
+      }
 
       setAccount({
         name: '',
@@ -135,9 +135,7 @@ const SignUp = ({navigation}: Props) => {
 
   return (
     <View style={styles.body}>
-      <MessageBox isVisible={errorBox}>
-        {message}
-      </MessageBox>
+      <MessageBox isVisible={errorBox}>{message}</MessageBox>
       <Animatable.View animation="fadeInLeft" style={styles.welcome}>
         <Image source={Logo} style={styles.logo} />
         <Text style={styles.h1}>Pronto para começar?</Text>

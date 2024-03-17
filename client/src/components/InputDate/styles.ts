@@ -33,6 +33,10 @@ export const styles = StyleSheet.create({
     width: 118,
     textAlign: 'center',
   },
+  borderError: {
+    borderColor: '#E04F5F',
+    borderWidth: 2,
+  },
   borderActive: {
     borderColor: '#8044e4',
     borderWidth: 2,

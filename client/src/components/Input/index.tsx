@@ -6,10 +6,17 @@ type Props = {
   name: string;
   value: string;
   setValue: (key: string, value: string) => void;
+  isError: boolean;
   secureTextEntry: boolean;
 };
 
-export const Input = ({name, value, setValue, secureTextEntry}: Props) => {
+export const Input = ({
+  name,
+  value,
+  setValue,
+  isError,
+  secureTextEntry,
+}: Props) => {
   const [fieldNames] = useState<{[key: string]: string}>({
     nome: 'name',
     email: 'email',
@@ -21,7 +28,12 @@ export const Input = ({name, value, setValue, secureTextEntry}: Props) => {
   return (
     <>
       <Text style={styles.infoText}>{name}</Text>
-      <View style={[styles.inputArea, isFocus ? styles.borderActive : null]}>
+      <View
+        style={[
+          styles.inputArea,
+          isFocus ? styles.borderActive : null,
+          isError ? styles.borderError : null,
+        ]}>
         <TextInput
           style={styles.inputLabel}
           placeholder={name}

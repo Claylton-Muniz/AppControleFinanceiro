@@ -4,7 +4,7 @@ import {NavigationProp} from '@react-navigation/native';
 
 import {styles} from './styles';
 
-import Logo from 'assets/logo.jpeg';
+import Logo from 'assets/logo/logo.jpeg';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 type RootStackParamList = {

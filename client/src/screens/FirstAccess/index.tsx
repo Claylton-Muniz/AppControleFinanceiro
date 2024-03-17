@@ -5,7 +5,7 @@ import {NavigationProp} from '@react-navigation/native';
 
 import {styles} from './styles';
 
-import Logo from 'assets/logo.jpeg';
+import Logo from 'assets/logo/logo.jpeg';
 
 type RootStackParamList = {
   SignIn: undefined;

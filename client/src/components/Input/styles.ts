@@ -17,8 +17,12 @@ export const styles = StyleSheet.create({
     color: '#000',
     marginHorizontal: 10,
   },
+  borderError: {
+    borderColor: '#E04F5F',
+    borderWidth: 2,
+  },
   borderActive: {
     borderColor: '#8044e4',
     borderWidth: 2,
-  }
+  },
 });

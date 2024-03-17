@@ -6,9 +6,10 @@ type Props = {
   name: string;
   value: {day: string; month: string; year: string};
   setValue: (key: string, value: string) => void;
+  isError: boolean;
 };
 
-export const InputDate = ({name, value, setValue}: Props) => {
+export const InputDate = ({name, value, setValue, isError}: Props) => {
   const [isFocus, setIsFocus] = useState({
     day: false,
     month: false,
@@ -21,7 +22,11 @@ export const InputDate = ({name, value, setValue}: Props) => {
 
       <View style={styles.inputDate}>
         <View
-          style={[styles.inputDay, isFocus.day ? styles.borderActive : null]}>
+          style={[
+            styles.inputDay,
+            isFocus.day ? styles.borderActive : null,
+            isError ? styles.borderError : null,
+          ]}>
           <TextInput
             style={styles.inputLabel}
             placeholder="Dia"
@@ -37,6 +42,7 @@ export const InputDate = ({name, value, setValue}: Props) => {
           style={[
             styles.inputMoth,
             isFocus.month ? styles.borderActive : null,
+            isError ? styles.borderError : null,
           ]}>
           <TextInput
             style={styles.inputLabel}
@@ -54,7 +60,11 @@ export const InputDate = ({name, value, setValue}: Props) => {
           />
         </View>
         <View
-          style={[styles.inputYear, isFocus.year ? styles.borderActive : null]}>
+          style={[
+            styles.inputYear,
+            isFocus.year ? styles.borderActive : null,
+            isError ? styles.borderError : null,
+          ]}>
           <TextInput
             style={styles.inputLabel}
             placeholder="Ano"

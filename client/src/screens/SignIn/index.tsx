@@ -18,7 +18,7 @@ import {url} from '../urlBase';
 axios.defaults.baseURL = url.base;
 
 type RootStackParamList = {
-  Home: undefined;
+  TabRoutes: undefined;
   SignUp: undefined;
 };
 
@@ -53,7 +53,7 @@ const SignIn = ({navigation}: Props) => {
         // Armazena o token no dispositivo
         AsyncStorage.setItem('@jwt_token', res.data.token);
         console.log(res.data.token);
-        navigation.navigate('Home');
+        navigation.navigate('TabRoutes');
       }
     } catch (err: any) {
       if (err.response && err.response.status === 401) {

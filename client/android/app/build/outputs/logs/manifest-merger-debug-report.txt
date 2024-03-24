@@ -5,11 +5,12 @@ MERGED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/andr
 INJECTED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/android/app/src/debug/AndroidManifest.xml:2:1-9:12
 INJECTED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/android/app/src/debug/AndroidManifest.xml:2:1-9:12
 INJECTED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/android/app/src/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.react:flipper-integration:0.73.5] /home/claylton/.gradle/caches/transforms-3/49a526363f5122c34ee0da4de241ced3/transformed/jetified-flipper-integration-0.73.5-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [com.facebook.react:flipper-integration:0.73.6] /home/claylton/.gradle/caches/transforms-3/7ceec762c322db3b2ee74240d8e71306/transformed/jetified-flipper-integration-0.73.6-debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-async-storage_async-storage] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-safe-area-context] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-screens] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:2:1-24:12
+MERGED from [:react-native-svg] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-svg/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:2:1-24:12
 MERGED from [com.facebook.fresco:flipper-fresco-plugin:3.1.3] /home/claylton/.gradle/caches/transforms-3/2b5ba21ddda073e33e012f0d689623c6/transformed/jetified-flipper-fresco-plugin-3.1.3/AndroidManifest.xml:8:1-13:12
 MERGED from [com.facebook.fresco:flipper:3.1.3] /home/claylton/.gradle/caches/transforms-3/78a2f7f2f5ffb04c17532765310fabea/transformed/jetified-flipper-3.1.3/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.fresco:fresco:3.1.3] /home/claylton/.gradle/caches/transforms-3/73ba53becf6a818dacbfe76ccb7dfd5a/transformed/jetified-fresco-3.1.3/AndroidManifest.xml:2:1-7:12
@@ -42,7 +43,7 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/claylton/.gr
 MERGED from [androidx.loader:loader:1.0.0] /home/claylton/.gradle/caches/transforms-3/6ba283a3244530bbd4580a31b408c1c9/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /home/claylton/.gradle/caches/transforms-3/aa8b400e3fa62f6a4287be6e71a3821f/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /home/claylton/.gradle/caches/transforms-3/0c17d1aa2ccc813649d410d5ca1839aa/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.react:hermes-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/0443f8c6429cf3a7fc86ad5122bee572/transformed/jetified-hermes-android-0.73.5-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [com.facebook.react:hermes-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/633188b2fe96cfe864e8a484846e336e/transformed/jetified-hermes-android-0.73.6-debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.savedstate:savedstate:1.2.0] /home/claylton/.gradle/caches/transforms-3/699d8495cfbcf29796d79737ecf7fe4f/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/claylton/.gradle/caches/transforms-3/5b356190bdf4bb7065067fc153a69c6d/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/claylton/.gradle/caches/transforms-3/46d614963c22b23ab93f8be235bc125f/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
@@ -99,8 +100,8 @@ ADDED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/andro
 MERGED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/android/app/src/main/AndroidManifest.xml:5:5-24:19
 MERGED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/android/app/src/main/AndroidManifest.xml:5:5-24:19
 INJECTED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/android/app/src/debug/AndroidManifest.xml:5:5-8:50
-MERGED from [com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:18:5-22:19
-MERGED from [com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:18:5-22:19
+MERGED from [com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:18:5-22:19
+MERGED from [com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:18:5-22:19
 MERGED from [com.google.android.material:material:1.9.0] /home/claylton/.gradle/caches/transforms-3/d3a8a24834f295d8078f18b8298041f7/transformed/material-1.9.0/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] /home/claylton/.gradle/caches/transforms-3/d3a8a24834f295d8078f18b8298041f7/transformed/material-1.9.0/AndroidManifest.xml:24:5-20
 MERGED from [com.facebook.stetho:stetho:1.6.0] /home/claylton/.gradle/caches/transforms-3/07d7c371ac06ab970dc33279314e8d16/transformed/jetified-stetho-1.6.0/AndroidManifest.xml:11:5-20
@@ -175,16 +176,18 @@ uses-sdk
 INJECTED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/android/app/src/debug/AndroidManifest.xml
 INJECTED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/android/app/src/debug/AndroidManifest.xml
-MERGED from [com.facebook.react:flipper-integration:0.73.5] /home/claylton/.gradle/caches/transforms-3/49a526363f5122c34ee0da4de241ced3/transformed/jetified-flipper-integration-0.73.5-debug/AndroidManifest.xml:5:5-44
-MERGED from [com.facebook.react:flipper-integration:0.73.5] /home/claylton/.gradle/caches/transforms-3/49a526363f5122c34ee0da4de241ced3/transformed/jetified-flipper-integration-0.73.5-debug/AndroidManifest.xml:5:5-44
+MERGED from [com.facebook.react:flipper-integration:0.73.6] /home/claylton/.gradle/caches/transforms-3/7ceec762c322db3b2ee74240d8e71306/transformed/jetified-flipper-integration-0.73.6-debug/AndroidManifest.xml:5:5-44
+MERGED from [com.facebook.react:flipper-integration:0.73.6] /home/claylton/.gradle/caches/transforms-3/7ceec762c322db3b2ee74240d8e71306/transformed/jetified-flipper-integration-0.73.6-debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-async-storage_async-storage] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-async-storage_async-storage] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-safe-area-context] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-safe-area-context] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-screens] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-screens] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:10:5-44
-MERGED from [com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:10:5-44
+MERGED from [:react-native-svg] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-svg/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-svg] /home/claylton/Documentos/claylton/AppControleFinanceiro/client/node_modules/react-native-svg/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:10:5-44
+MERGED from [com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:10:5-44
 MERGED from [com.facebook.fresco:flipper-fresco-plugin:3.1.3] /home/claylton/.gradle/caches/transforms-3/2b5ba21ddda073e33e012f0d689623c6/transformed/jetified-flipper-fresco-plugin-3.1.3/AndroidManifest.xml:11:5-44
 MERGED from [com.facebook.fresco:flipper-fresco-plugin:3.1.3] /home/claylton/.gradle/caches/transforms-3/2b5ba21ddda073e33e012f0d689623c6/transformed/jetified-flipper-fresco-plugin-3.1.3/AndroidManifest.xml:11:5-44
 MERGED from [com.facebook.fresco:flipper:3.1.3] /home/claylton/.gradle/caches/transforms-3/78a2f7f2f5ffb04c17532765310fabea/transformed/jetified-flipper-3.1.3/AndroidManifest.xml:5:5-44
@@ -249,8 +252,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /home/claylton/.gradl
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /home/claylton/.gradle/caches/transforms-3/aa8b400e3fa62f6a4287be6e71a3821f/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /home/claylton/.gradle/caches/transforms-3/0c17d1aa2ccc813649d410d5ca1839aa/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /home/claylton/.gradle/caches/transforms-3/0c17d1aa2ccc813649d410d5ca1839aa/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.react:hermes-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/0443f8c6429cf3a7fc86ad5122bee572/transformed/jetified-hermes-android-0.73.5-debug/AndroidManifest.xml:5:5-44
-MERGED from [com.facebook.react:hermes-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/0443f8c6429cf3a7fc86ad5122bee572/transformed/jetified-hermes-android-0.73.5-debug/AndroidManifest.xml:5:5-44
+MERGED from [com.facebook.react:hermes-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/633188b2fe96cfe864e8a484846e336e/transformed/jetified-hermes-android-0.73.6-debug/AndroidManifest.xml:5:5-44
+MERGED from [com.facebook.react:hermes-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/633188b2fe96cfe864e8a484846e336e/transformed/jetified-hermes-android-0.73.6-debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.0] /home/claylton/.gradle/caches/transforms-3/699d8495cfbcf29796d79737ecf7fe4f/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.2.0] /home/claylton/.gradle/caches/transforms-3/699d8495cfbcf29796d79737ecf7fe4f/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/claylton/.gradle/caches/transforms-3/5b356190bdf4bb7065067fc153a69c6d/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -326,15 +329,15 @@ MERGED from [com.android.ndk.thirdparty:openssl:1.1.1l-beta-1] /home/claylton/.g
 	android:minSdkVersion
 		INJECTED from /home/claylton/Documentos/claylton/AppControleFinanceiro/client/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from [com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:16:5-78
+ADDED from [com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:16:5-78
 	android:name
-		ADDED from [com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:16:22-75
+		ADDED from [com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:16:22-75
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from [com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:19:9-21:40
+ADDED from [com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:19:9-21:40
 	android:exported
-		ADDED from [com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:21:13-37
+		ADDED from [com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from [com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:20:13-77
+		ADDED from [com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:20:13-77
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.facebook.flipper:flipper:0.201.0] /home/claylton/.gradle/caches/transforms-3/9b2c28bd5719adb7e465469e2ca76c12/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:14:5-76
 	android:name

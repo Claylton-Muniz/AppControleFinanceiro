@@ -16,8 +16,8 @@
 14    for React Native Apps.
 15    -->
 16    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-16-->[com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:16:5-78
-16-->[com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:16:22-75
+16-->[com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:16:5-78
+16-->[com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:16:22-75
 17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 17-->[com.facebook.flipper:flipper:0.201.0] /home/claylton/.gradle/caches/transforms-3/9b2c28bd5719adb7e465469e2ca76c12/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:14:5-76
 17-->[com.facebook.flipper:flipper:0.201.0] /home/claylton/.gradle/caches/transforms-3/9b2c28bd5719adb7e465469e2ca76c12/transformed/jetified-flipper-0.201.0/AndroidManifest.xml:14:22-73
@@ -79,11 +79,11 @@
 47            </intent-filter>
 48        </activity>
 49        <activity
-49-->[com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:19:9-21:40
+49-->[com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:19:9-21:40
 50            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-50-->[com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:20:13-77
+50-->[com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:20:13-77
 51            android:exported="false" />
-51-->[com.facebook.react:react-android:0.73.5] /home/claylton/.gradle/caches/transforms-3/3ce902105a4ff251177e5b9f5c724b87/transformed/jetified-react-android-0.73.5-debug/AndroidManifest.xml:21:13-37
+51-->[com.facebook.react:react-android:0.73.6] /home/claylton/.gradle/caches/transforms-3/e1231b5b187cb579b629117f9511a862/transformed/jetified-react-android-0.73.6-debug/AndroidManifest.xml:21:13-37
 52
 53        <provider
 53-->[androidx.emoji2:emoji2:1.2.0] /home/claylton/.gradle/caches/transforms-3/faa3592d2fc203d6c74b9a5f601058a1/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20

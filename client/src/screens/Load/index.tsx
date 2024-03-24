@@ -8,7 +8,7 @@ import Logo from 'assets/logo/logo.jpeg';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 type RootStackParamList = {
-  Home: undefined;
+  TabRoutes: undefined;
   FirstAccess: undefined;
 };
 
@@ -23,7 +23,7 @@ const Load = ({navigation}: Props) => {
       setTimeout(() => {
         if (token) {
           // console.log('usuário já está logado, token:', token);
-          navigation.navigate('Home');
+          navigation.navigate('TabRoutes');
         } else {
           navigation.navigate('FirstAccess');
         }

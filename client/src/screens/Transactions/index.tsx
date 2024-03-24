@@ -1,10 +1,14 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
+import {styles} from './styles';
+
 const Transactions = () => {
   return (
     <View>
-      <Text>Transactions</Text>
+      <View style={styles.header}>
+        <Text style={styles.titleHeader}>Transações</Text>
+      </View>
     </View>
   );
 };

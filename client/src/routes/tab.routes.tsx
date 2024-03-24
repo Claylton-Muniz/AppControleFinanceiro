@@ -20,7 +20,7 @@ const Tab = createBottomTabNavigator();
 const TabRoutes = () => {
   return (
     <Tab.Navigator
-      initialRouteName="Home"
+      initialRouteName="Transactions"
       screenOptions={{
         headerShown: false,
         tabBarStyle: {

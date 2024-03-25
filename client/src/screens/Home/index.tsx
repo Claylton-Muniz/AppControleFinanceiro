@@ -7,6 +7,7 @@ import {styles} from './styles';
 import IconUser from 'assets/icons/SvgUser';
 import IconArrowUp from 'assets/icons/SvgArrowUp';
 import IconArrowDown from 'assets/icons/SvgArrowDown';
+import SvgArrowSelect from 'assets/icons/SvgArrowSelect';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Animatable.View animation="slideInDown" style={styles.header}>
         <IconUser style={styles.iconUser} color="#fff" />
         <Text style={styles.month}>Março</Text>
+        <SvgArrowSelect style={styles.iconArrowSelect} color="#fff" />
         <Text style={styles.accountBalanceText}>Saldo em contas</Text>
         <Text style={styles.accountBalanceValue}>R$ 1000,00</Text>
         <IconArrowUp style={styles.iconArrowUp} color="#fff" />

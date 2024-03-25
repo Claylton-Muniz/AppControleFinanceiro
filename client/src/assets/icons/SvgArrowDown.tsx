@@ -9,7 +9,7 @@ type props = {
   style?: {};
 };
 
-const SvgTranform = ({width = 14, height = 16, color, style}: props) => (
+const SvgArrowDown = ({width = 14, height = 16, color, style}: props) => (
   <View style={style}>
     <Svg width={width} height={height} fill="none">
       <Path
@@ -23,4 +23,4 @@ const SvgTranform = ({width = 14, height = 16, color, style}: props) => (
   </View>
 );
 
-export default SvgTranform;
+export default SvgArrowDown;

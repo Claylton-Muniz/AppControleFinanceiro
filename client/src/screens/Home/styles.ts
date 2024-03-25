@@ -11,6 +11,11 @@ export const styles = StyleSheet.create({
     top: 7,
     left: 15,
   },
+  iconArrowSelect: {
+    position: 'absolute',
+    top: 7,
+    right: 162,
+  },
   month: {
     color: '#fff',
     alignSelf: 'center',

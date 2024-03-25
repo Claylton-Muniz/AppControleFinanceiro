@@ -10,7 +10,7 @@ type props = {
   focused: boolean;
 };
 
-const SvgTranform = ({width = 20, height = 20, color, focused}: props) => (
+const SvgPlus = ({width = 20, height = 20, color, focused}: props) => (
   <View style={[styles.container, focused ? styles.active : styles.inactive]}>
     <Svg width={width} height={height} fill="none">
       <G filter="url(#tranform_svg__a)">
@@ -40,4 +40,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SvgTranform;
+export default SvgPlus;

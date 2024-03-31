@@ -79,7 +79,9 @@ const Home = () => {
           </View>
         </Modal>
         <Text style={styles.accountBalanceText}>Saldo em contas</Text>
-        <Text style={styles.accountBalanceValue}>R$ {saldo.toFixed(2).replace('.', ',')}</Text>
+        <Text style={styles.accountBalanceValue}>
+          R$ {saldo.toFixed(2).replace('.', ',')}
+        </Text>
         <IconArrowUp style={styles.iconArrowUp} color="#fff" />
         <IconArrowDown style={styles.iconArrowDown} color="#fff" />
         <View style={styles.rowContainer}>

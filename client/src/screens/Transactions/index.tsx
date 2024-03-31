@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {ScrollView, Text, TouchableOpacity, View} from 'react-native';
-
 import * as Animatable from 'react-native-animatable';
+
 import {styles} from './styles';
+
+import {date} from '../date';
 
 import IconSearch from 'assets/icons/SvgSearch';
 import IconArrowLeft from 'assets/icons/SvgArrowLeft';
@@ -11,6 +13,8 @@ import IconPadlock from '../../assets/icons/SvgPadlock';
 import IconFolder from '../../assets/icons/SvgFolder';
 
 const Transactions = () => {
+  const [dateId, setDateId] = useState(new Date().getMonth());
+
   return (
     <ScrollView>
       <Animatable.View animation="slideInDown">
@@ -19,9 +23,17 @@ const Transactions = () => {
           <TouchableOpacity style={styles.search}>
             <IconSearch color="#fff" />
           </TouchableOpacity>
-          <IconArrowLeft style={styles.iconArrowLeft} color="#fff" />
-          <Text style={styles.month}>Março</Text>
-          <IconArrowRight style={styles.iconArrowRight} color="#fff" />
+          <TouchableOpacity
+            style={styles.iconArrowLeft}
+            onPress={() => setDateId(dateId === 0 ? 11 : dateId - 1)}>
+            <IconArrowLeft color="#fff" />
+          </TouchableOpacity>
+          <Text style={styles.month}>{date.months[dateId].name}</Text>
+          <TouchableOpacity
+            style={styles.iconArrowRight}
+            onPress={() => setDateId((dateId + 1) % 12)}>
+            <IconArrowRight color="#fff" />
+          </TouchableOpacity>
         </View>
         <View style={styles.info}>
           <IconPadlock style={styles.iconPadlock} color="#444444" />

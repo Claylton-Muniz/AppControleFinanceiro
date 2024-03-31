@@ -1,6 +1,10 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
+  body: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
   header: {
     backgroundColor: '#5A3787',
     borderBottomLeftRadius: 15,
@@ -13,12 +17,27 @@ export const styles = StyleSheet.create({
   },
   iconArrowSelect: {
     position: 'absolute',
-    top: 7,
-    right: 162,
+    top: 8,
+    right: 156,
   },
   month: {
     color: '#fff',
     alignSelf: 'center',
+    fontWeight: 'bold',
+    fontSize: 15,
+  },
+  select: {
+    position: 'absolute',
+    alignSelf: 'center',
+    top: 24,
+    paddingHorizontal: 20,
+    borderRadius: 7,
+    backgroundColor: '#fff',
+  },
+  selectVisible: {
+    flex: 1,
+  },
+  selectText: {
     fontWeight: 'bold',
     fontSize: 15,
   },
@@ -61,5 +80,11 @@ export const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: 'bold',
     paddingBottom: 15,
+  },
+  grafico: {
+    alignSelf: 'center',
+    marginVertical: '34%',
+    width: 400,
+    height: 350,
   },
 });

@@ -25,6 +25,7 @@ type Props = {
 };
 
 const SignUp = ({navigation}: Props) => {
+  // Variaveis
   const [message, setMessage] = useState('');
   const [errorBox, setErrorBox] = useState(false);
 
@@ -42,6 +43,7 @@ const SignUp = ({navigation}: Props) => {
     dob: false,
   });
 
+  // Alterando um único valor da chave
   const handleInputChange = (key: any, value: any) => {
     setAccount(prevState => ({...prevState, [key]: value}));
     console.log(account);
@@ -58,6 +60,7 @@ const SignUp = ({navigation}: Props) => {
     console.log(account);
   };
 
+  // Validações
   const validateEmail = (email: any) => {
     const regex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
     return regex.test(email);
@@ -103,6 +106,7 @@ const SignUp = ({navigation}: Props) => {
       errorMessage = 'O nome deve conter 3 ou mais caracteres';
     }
 
+    // Postando informações
     if (errorMessage === '') {
       setErrorBox(false);
 

@@ -1,13 +1,15 @@
 import React, {useState} from 'react';
-import {Text, TextInput, View} from 'react-native';
+import {KeyboardTypeOptions, Text, TextInput, View} from 'react-native';
 import {styles} from './styles';
 
 type Props = {
   name: string;
   value: string;
   setValue: (key: string, value: string) => void;
-  isError: boolean;
-  secureTextEntry: boolean;
+  isError?: boolean;
+  secureTextEntry?: boolean;
+  object?: boolean;
+  keyboardType: KeyboardTypeOptions;
 };
 
 export const Input = ({
@@ -16,6 +18,8 @@ export const Input = ({
   setValue,
   isError,
   secureTextEntry,
+  keyboardType = 'default',
+  object = true,
 }: Props) => {
   const [fieldNames] = useState<{[key: string]: string}>({
     nome: 'name',
@@ -34,16 +38,31 @@ export const Input = ({
           isFocus ? styles.borderActive : null,
           isError ? styles.borderError : null,
         ]}>
-        <TextInput
-          style={styles.inputLabel}
-          placeholder={name}
-          placeholderTextColor="#575757"
-          value={value}
-          onFocus={() => setIsFocus(true)}
-          onBlur={() => setIsFocus(false)}
-          onChangeText={t => setValue(fieldNames[name.toLowerCase()], t)}
-          secureTextEntry={secureTextEntry}
-        />
+        {object ? (
+          <TextInput
+            style={styles.inputLabel}
+            placeholder={name}
+            placeholderTextColor="#575757"
+            keyboardType={keyboardType}
+            value={value}
+            onFocus={() => setIsFocus(true)}
+            onBlur={() => setIsFocus(false)}
+            onChangeText={t => setValue(fieldNames[name.toLowerCase()], t)}
+            secureTextEntry={secureTextEntry}
+          />
+        ) : (
+          <TextInput
+            style={styles.inputLabel}
+            placeholder={name}
+            placeholderTextColor="#575757"
+            keyboardType={keyboardType}
+            value={value}
+            onFocus={() => setIsFocus(true)}
+            onBlur={() => setIsFocus(false)}
+            onChangeText={t => setValue(t, t)}
+            secureTextEntry={secureTextEntry}
+          />
+        )}
       </View>
     </>
   );

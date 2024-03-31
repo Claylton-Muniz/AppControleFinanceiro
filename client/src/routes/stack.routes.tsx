@@ -5,6 +5,8 @@ import Load from '../screens/Load';
 import FirstAccess from '../screens/FirstAccess';
 import SignIn from '../screens/SignIn';
 import signUp from '../screens/SignUp';
+import BankAccount from '../screens/BankAccount';
+import BankCard from '../screens/bankCard';
 
 import TabRoutes from './tab.routes';
 
@@ -20,6 +22,8 @@ const StackRoutes = () => {
       <Stack.Screen name="SignIn" component={SignIn} />
       <Stack.Screen name="SignUp" component={signUp} />
       <Stack.Screen name="TabRoutes" component={TabRoutes} />
+      <Stack.Screen name="BankAccount" component={BankAccount} />
+      <Stack.Screen name="BankCard" component={BankCard} />
     </Stack.Navigator>
   );
 };

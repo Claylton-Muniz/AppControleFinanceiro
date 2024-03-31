@@ -1,21 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
-
 import * as Animatable from 'react-native-animatable';
+
 import {styles} from './styles';
+
+import {date} from '../date';
 
 import IconArrowLeft from 'assets/icons/SvgArrowLeft';
 import IconArrowRight from 'assets/icons/SvgArrowRight';
 
 const Planning = () => {
+  const [dateId, setDateId] = useState(new Date().getMonth());
+
   return (
     <View>
       <Animatable.View animation="slideInDown">
         <View style={styles.header}>
           <Text style={styles.titleHeader}>Planejamento</Text>
-          <IconArrowLeft style={styles.iconArrowLeft} color="#fff" />
-          <Text style={styles.month}>Março</Text>
-          <IconArrowRight style={styles.iconArrowRight} color="#fff" />
+          <TouchableOpacity
+            style={styles.iconArrowLeft}
+            onPress={() => setDateId(dateId === 0 ? 11 : dateId - 1)}>
+            <IconArrowLeft color="#fff" />
+          </TouchableOpacity>
+          <Text style={styles.month}>{date.months[dateId].name}</Text>
+          <TouchableOpacity
+            style={styles.iconArrowRight}
+            onPress={() => setDateId((dateId + 1) % 12)}>
+            <IconArrowRight color="#fff" />
+          </TouchableOpacity>
         </View>
       </Animatable.View>
       <Animatable.View animation="fadeInUp">

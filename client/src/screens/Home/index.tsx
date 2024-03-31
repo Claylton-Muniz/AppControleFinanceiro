@@ -16,12 +16,7 @@ import IconArrowUp from 'assets/icons/SvgArrowUp';
 import IconArrowDown from 'assets/icons/SvgArrowDown';
 import IconArrowSelect from 'assets/icons/SvgArrowSelect';
 
-type Account = {
-  saldo: number;
-};
-
 const Home = () => {
-  const [accounts, setAccounts] = useState<Account[]>([]);
   const [saldo, setSaldo] = useState(0);
   const [dateId, setDateId] = useState(new Date().getMonth());
   const [visible, setVisible] = useState(false);
@@ -29,20 +24,20 @@ const Home = () => {
   useEffect(() => {
     const getAccounts = async () => {
       const token = await AsyncStorage.getItem('@jwt_token');
-  
+
       const responses = await axios.get('/api/bank-accounts', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
-  
+
       let total = 0;
-      responses.data.map((response: {saldo: number}) => {total += response.saldo});
+      responses.data.map((response: {saldo: number}) => {
+        total += response.saldo;
+      });
       setSaldo(total);
-  
-      setAccounts(responses.data);
     };
-  
+
     getAccounts();
   }, []);
 

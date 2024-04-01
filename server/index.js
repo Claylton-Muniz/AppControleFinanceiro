@@ -131,6 +131,105 @@ app.post('/api/bank-cards', (req, res) => {
     })
 })
 
+app.get('/api/monthly-revenue', (req, res) => {
+    let sql = "SELECT * FROM monthly_revenue WHERE id_user = ?"
+    const idUser = req.query.idUser
+
+    db.query(sql, [idUser], (err, result) => {
+        if (err) {
+            console.log("Erro na consulta:", err)
+          } else {
+            console.log("Dados enviados com sucesso!!!")
+            res.json(result)
+          }
+    })
+})
+
+app.post('/api/monthly-revenue', (req, res) => {
+    let sql = "INSERT INTO monthly_revenue (id_user, fonte_renda, valor) VALUES (?, ?, ?)"
+    const { idUser, fonte_renda, valor } = req.body
+
+    db.query(sql, [idUser, fonte_renda, parseFloat(valor)], (err, result) => {
+        if (err) {
+            console.log("Erro na consulta:", err)
+          } else {
+            console.log("Dados enviados com sucesso!!!")
+            res.json({message: 'Dados enviados com sucesso!!!'})
+          }
+    })
+
+})
+
+app.get('/api/planning/:id/:month', (req, res) => {
+    let sql = "SELECT * FROM planning WHERE id_user = ? AND data = ?"
+    const { id, month } = req.params
+
+    db.query(sql, [id, month], (err, result) => {
+        if (err) {
+            console.log("Erro na consulta:", err)
+        } else {
+            console.log("sucesso!!!")
+            res.json(result)
+        }
+    })
+});
+
+app.post('/api/planning', (req, res) => {
+    let sql = "INSERT INTO planning (id_user, objetivo, data) VALUES (?, ?, ?)"
+    const { idUser, objetivo, month } = req.body
+
+    db.query(sql, [idUser, parseFloat(objetivo), month], (err, result) => {
+        if (err) {
+            console.log("Erro na consulta:", err)
+        } else {
+            console.log("Dados enviados com sucesso!!!")
+            res.json({message: 'Dados enviados com sucesso!!!'})
+        }
+    })
+})
+
+app.get('/api/transactions/:id/:month/:type?', (req, res) => {
+    if (req.params.type) {
+        let sql = "SELECT * FROM transactions WHERE id_user = ? AND data = ? AND type = ?";
+        const { id, month, type} = req.params
+
+        db.query(sql, [id, month, type], (err, result) => {
+            if (err) {
+                console.log("Erro na consulta:", err)
+            } else {
+                console.log("sucesso!!!")
+                res.json(result)
+            }
+        })
+    } else {
+        let sql = "SELECT * FROM transactions WHERE id_user = ? AND data = ?";
+        const { id, month } = req.params
+
+        db.query(sql, [id, month], (err, result) => {
+            if (err) {
+                console.log("Erro na consulta:", err)
+            } else {
+                console.log("sucesso!!!")
+                res.json(result)
+            }
+        })
+    }
+});
+
+app.post('/api/transactions', (req, res) => {
+    let sql = "INSERT INTO transactions (id_user, type, transaction, valor, data) VALUES (?, ?, ?, ?, ?)"
+    const { idUser, type, transaction, valor, data } = req.body
+
+    db.query(sql, [idUser, type, transaction, valor, data], (err, result) => {
+        if (err) {
+            console.log("Erro na consulta:", err)
+        } else {
+            console.log("Dados enviados com sucesso!!!")
+            res.json({message: 'Dados enviados com sucesso!!!'})
+        }
+    })
+})
+
 app.listen(1337, () => {
     console.log('run 1337!!!')
 })

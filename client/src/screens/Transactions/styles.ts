@@ -36,16 +36,28 @@ export const styles = StyleSheet.create({
     right: 152,
   },
   info: {
-    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  infoLeft: {
+    // backgroundColor: 'red',
+    width: '50%',
+    marginTop: 10,
+    marginBottom: 1,
+  },
+  infoRight: {
+    // backgroundColor: 'blue',
+    width: '50%',
+    marginTop: 10,
+    marginBottom: 1,
   },
   iconPadlock: {
     position: 'absolute',
-    top: 20,
-    left: 24,
+    top: 9,
+    left: 29,
   },
   iconFolder: {
     position: 'absolute',
-    top: 20,
+    top: 9,
     right: 170,
   },
   infoTitle: {
@@ -53,18 +65,17 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   textTitle: {
+    alignSelf: 'center',
     color: '#000',
     fontWeight: 'bold',
-    marginHorizontal: 65,
   },
   infoValue: {
     flexDirection: 'row',
   },
   textValue: {
+    alignSelf: 'center',
     color: '#222222',
     fontWeight: '400',
-    marginRight: 90,
-    marginHorizontal: 80,
   },
   line: {
     alignSelf: 'center',
@@ -84,5 +95,33 @@ export const styles = StyleSheet.create({
   },
   emptyDescription: {
     color: '#717070',
+  },
+  transaction: {
+    flexDirection: 'row',
+    marginVertical: 7,
+    marginHorizontal: 30,
+  },
+  leftTransaction: {
+    // backgroundColor: 'red',
+    width: '50%',
+    // marginLeft: 25,
+  },
+  rightTransaction: {
+    // backgroundColor: 'blue',
+    width: '50%',
+    alignItems: 'flex-end',
+  },
+  textTransaction: {
+    alignContent: 'center',
+    marginRight: 0,
+    color: '#000',
+    fontWeight: 'bold',
+    fontSize: 15,
+  },
+  receita: {
+    color: 'green',
+  },
+  despesa: {
+    color: 'red',
   },
 });

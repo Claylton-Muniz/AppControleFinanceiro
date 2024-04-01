@@ -10,6 +10,7 @@ import {NavigationProp, StackActions} from '@react-navigation/native';
 type RootStackParamList = {
   BankAccount: undefined;
   BankCard: undefined;
+  CashInCome: undefined;
   SignIn: undefined;
 };
 
@@ -26,6 +27,12 @@ const Logout = ({navigation}: Props) => {
         </View>
       </Animatable.View>
       <Animatable.View animation="fadeInUp">
+        <TouchableOpacity
+          style={styles.option}
+          onPress={() => navigation.navigate('CashInCome')}>
+          <Text>Inserir receita mensal</Text>
+        </TouchableOpacity>
+        <View style={styles.line} />
         <TouchableOpacity
           style={styles.option}
           onPress={() => navigation.navigate('BankAccount')}>

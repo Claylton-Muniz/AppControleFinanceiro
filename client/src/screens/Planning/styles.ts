@@ -59,4 +59,81 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '600',
   },
+  info: {
+    flexDirection: 'row',
+  },
+  infoLeft: {
+    // backgroundColor: 'red',
+    width: '50%',
+    marginTop: 10,
+    marginBottom: 1,
+  },
+  infoRight: {
+    // backgroundColor: 'blue',
+    width: '50%',
+    marginTop: 10,
+    marginBottom: 1,
+  },
+  iconPadlock: {
+    position: 'absolute',
+    top: 9,
+    left: 29,
+  },
+  iconFolder: {
+    position: 'absolute',
+    top: 9,
+    right: 170,
+  },
+  infoTitle: {
+    paddingTop: 12,
+    flexDirection: 'row',
+  },
+  textTitle: {
+    alignSelf: 'center',
+    color: '#000',
+    fontWeight: 'bold',
+  },
+  infoValue: {
+    flexDirection: 'row',
+  },
+  textValue: {
+    alignSelf: 'center',
+    color: '#222222',
+    fontWeight: '400',
+  },
+  line: {
+    alignSelf: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: '#D9D9D9',
+    width: '90%',
+    marginVertical: 10,
+  },
+  despesaContainer: {
+    flexDirection: 'row',
+    marginVertical: 7,
+    marginHorizontal: 30,
+  },
+  leftDespesa: {
+    // backgroundColor: 'red',
+    width: '50%',
+    // marginLeft: 25,
+  },
+  rightDespesa: {
+    // backgroundColor: 'blue',
+    width: '50%',
+    alignItems: 'flex-end',
+  },
+  textDespesa: {
+    alignContent: 'center',
+    marginRight: 0,
+    color: '#000',
+    fontWeight: 'bold',
+    fontSize: 15,
+  },
+  receita: {
+    color: 'green',
+  },
+  despesa: {
+    color: 'red',
+  },
 });

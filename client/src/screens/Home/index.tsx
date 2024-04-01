@@ -16,6 +16,8 @@ import IconArrowUp from 'assets/icons/SvgArrowUp';
 import IconArrowDown from 'assets/icons/SvgArrowDown';
 import IconArrowSelect from 'assets/icons/SvgArrowSelect';
 
+axios.defaults.baseURL = url.base;
+
 const Home = () => {
   const [saldo, setSaldo] = useState(0);
   const [dateId, setDateId] = useState(new Date().getMonth());
